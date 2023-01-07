@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+}
+
+#page {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 24px;
+    font-size: 24px;
+}
+
+.scoreBox {
+    gap: 100px;
+}
+
+.playerScoreBox, .computerScoreBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result, h3, .winner {
+    text-align: center;
+}
+
+.rounds {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}

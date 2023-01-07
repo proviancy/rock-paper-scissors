@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors!</title>
 </head>
 <body>
+    <div class="container" id="page">
+        <h1>Rock Paper Scissors</h1>
+        <h2>Click below to make your choice. The computer will pick automatically.</h2>
+        <h3>After 5 rounds, the game will reset. You can manually click the reset button at any time.</h3>
+        <div class="rounds">
+            <p>Round <span class="roundCounter">1</span>/5</p>
+        </div>
+        <h3 class="gameOver hidden">Game Over!</h3>
+        <div class="container buttons">
+            <button class="game rock">Rock</button>
+            <button class="game paper">Paper</button>
+            <button class="game scissors">Scissors</button>
+        </div>
+        <div class="scoreBox container">
+            <div class="playerScoreBox container">
+                <p>Player Score</p>
+                <p class="playerScore">0</p>
+            </div>
+            <div class="computerScoreBox container">
+                <p>Computer Score</p>
+                <p class="computerScore">0</p>
+            </div>
+        </div>
+        <div class="resultBox">
+            <p class="result"></p>
+            <h2 class="winner"></h2>
+        </div>
+        <div>
+            <button class="resetButton">Reset</button>
+        </div>
+    </div>
     <script src="rockpaperscissors.js"></script>
 </body>
 </html>
